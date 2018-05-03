@@ -41,5 +41,21 @@ int main(){
 
 	cout << root << endl;
 
+	Node bag;
+	bag["name"] = "data_bag";
+	bag["chars"] = root;
+
+	cout << bag << endl;
+
+	if(bag["chars"].remove(1)){
+		cout << "remove success" << endl;
+	}
+
+	cout << bag << endl;
+
+	cout << bag["name"] << endl;
+	cout << bag["chars"] << endl;
+	cout << bag["asfdasdf"] << endl;
+
 	return 0;
 }
